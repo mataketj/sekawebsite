@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+{% block content %}
+
+<br>
+{%if name %}
+  <h1> Hello {{ name }}!!</h1>
+{% else %}
+  <h1> What's Your Name?</h1>
+  <br>
+  <form method="POST">
+    {{form.hidden_tag()}}
+    {{form.name.label}}
+    {{form.name()}}
+    <br>
+    {{form.submit}}
+
+  </form>
+  {% endif %}
+
+{% endblock %}
+
+
+<div class="container-fluid faq-section bg-light py-5">
+  <div class="container py-5">
+      <div>
+          <h4 class="text-primary"> Claim your FREE Discovery Session</h4>
+          <p class="mb-4">Give us your details below.</p>
+          <form>
+              <div class="row g-3">
+                  <div class="col-lg-12 col-xl-6">
+
+                    {{form.hidden_tag()}}
+                    {{form.first_name.label}}
+                    {{form.first_name()}}
+        
+
+
+                      <div class="form-floating">
+                          <input type="text" class="form-control border-0" id="name" placeholder="Your Name">
+                          <label for="name">Your First Name</label>
+                      </div>
+                  </div>
+                  <div class="col-lg-12 col-xl-6">
+                      <div class="form-floating">
+                          <input type="text" class="form-control border-0" id="name" placeholder="Your Name">
+                          <label for="name">Your Last Name</label>
+                      </div>
+                  </div>
+                  <div class="col-lg-12 col-xl-6">
+                      <div class="form-floating">
+                          <input type="email" class="form-control border-0" id="email" placeholder="Your Email">
+                          <label for="email">Your Email</label>
+                      </div>
+                  </div>
+                  <div class="col-lg-12 col-xl-6">
+                      <div class="form-floating">
+                          <input type="text" class="form-control border-0" id="name" placeholder="Your Name">
+                          <label for="name">Company Name</label>
+                      </div>
+                  </div>
+                  <div class="col-lg-12 col-xl-6">
+                      <div class="form-floating">
+                          <input type="text" class="form-control border-0" id="project" placeholder="Project">
+                          <label for="project">Company Website/URL</label>
+                      </div>
+                  </div>
+                  <div class="col-12">
+                      <div class="form-floating">
+                          <input type="text" class="form-control border-0" id="subject" placeholder="Subject">
+                          <label for="subject">Company Size</label>
+                      </div>
+                  </div>
+                  <!-- <p>Interests</p> -->
+                  <a class="text-primary fw-bold" href=""> Interests </a>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                      <label class="form-check-label" for="exampleRadios1">
+                        Default radio
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                      <label class="form-check-label" for="exampleRadios2">
+                        Second default radio
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                      <label class="form-check-label" for="exampleRadios3">
+                        Second default radio
+                      </label>
+                  </div>
+                  <div class="col-12">
+                      <div class="form-floating">
+                          <textarea class="form-control border-0" placeholder="Leave a message here" id="message" style="height: 120px"></textarea>
+                          <label for="message">Comment</label>
+                      </div>
+
+                  </div>
+                  <div class="col-12">
+                      <button class="btn btn-primary w-100 py-3">Send Message</button>
+                  </div>
+              </div>
+          </form>
+      </div>
+    </div>
+  </div>

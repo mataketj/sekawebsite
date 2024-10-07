@@ -1,0 +1,112 @@
+
+{% extends "base.html" %}
+{% block content %}
+<!-- Carousel Start -->
+<!-- <div class="container-fluid nav-bar px-0 px-lg-4 py-lg-0"> -->
+    <div class="header-carousel owl-carousel">
+        <div class="header-carousel-item bg-primary">
+            <div class="carousel-caption">
+                <div class="container">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-lg-7 animated fadeInLeft">
+                            <div class="text-sm-center text-md-start">
+                                <!-- <h4 class="text-white text-uppercase fw-bold mb-4">Welcome To Seka Squared</h4> -->
+                                <h1 class="display-1 text-white mb-4">Data Analytics, Machine Learning and Customer Software</h1>
+                                <p class="mb-5 fs-5">
+                                    We are passionate about helping businesses unlock the true potential of their data, using our custom data solutions. 
+                                </p>
+                                <div class="d-flex justify-content-center justify-content-md-start flex-shrink-0 mb-4">
+                                    <!-- <a class="btn btn-light rounded-pill py-3 px-4 px-md-5 me-2" href="#"><i class="fas fa-play-circle me-2"></i> Watch Video</a> -->
+                                    <a class="btn btn-dark rounded-pill py-3 px-4 px-md-5 ms-2" href="#">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 animated fadeInRight">
+                            <div class="calrousel-img" style="object-fit: cover;">
+                                <img src="{{ url_for('static', filename='img/carousel-2.png')}}" class="img-fluid w-100" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- Service Start -->
+    <div class="container-fluid service py-5">
+        <div class="container py-5">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                <!-- <h4 class="text-primary">Data Journey</h4> -->
+                <h1 class="display-4 mb-4">Where are you on your data journey?</h1>
+                <p class="mb-0">Whether your organisation is planning a return to the office or going 100% remote, legacy tools can only take you so far. The future of work is here. See if you’re ready to show the world how it’s done.
+                </p>
+            </div>
+            
+            <div class="row g-4 justify-content-center">
+    
+                <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.2s">
+                    <a class="btn btn-primary rounded-pill py-3 px-5" href="/session">Claim your FREE Discovery Session!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+    <!-- Blog Start -->
+    <div class="container-fluid faq-section bg-light py-5">
+        <div class="container py-5">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                <h1 class="display-4 mb-4">Stay ahead of the Data and machine learning revolution</h1>
+                <p class="mb-0">In the fast-evolving world of data and machine learning, staying informed is essential. Our blog is dedicated to providing insights on the latest trends, innovations, and developments shaping the data landscape. Here, we share our thoughts and expertise to help you navigate this dynamic field, from groundbreaking advancements to practical applications. Explore our perspectives on the current state of data and what the future holds.
+                </p>
+            </div>
+            <div class="row g-4 justify-content-center">
+    
+                <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.2s">
+                    <a class="btn btn-primary rounded-pill py-3 px-5" href="#">Comming Soon!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Blog End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+        <div class="container py-5">
+
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                <div class="footer-item">
+                    <h4 class="text-white mb-4">Newsletter</h4>
+                    <p class="text-white mb-3">Sign up for our newsletter to join our community and never miss out on any key developments.</p>
+                    <div class="position-relative rounded-pill mb-4">
+                        <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
+                        <button type="button" class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">Sign Up</button>
+                    </div>
+                </div>
+
+                <!-- <div class="footer-item"> -->
+                    <!-- <a href="index.html" class="p-0"> -->
+                        <!-- <h3 class="text-white"><i class="fab fa-slack me-3"></i> Seka Squered</h3> -->
+                        <!-- <h3 class="text-white"> -->
+                            <!-- <i class="fab fa-slack me-2"></i>  -->
+                            <!-- <img src="{{ url_for('static', filename='img/logo.png')}}" alt="Logo"> -->
+                            <!-- Seka Squared -->
+                        <!-- </h3> -->
+                        <!-- <img src="img/logo.png" alt="Logo"> -->
+                    <!-- </a> -->
+                    <!-- <p class="text-white mb-4">You can also follow us on our social media pages!</p>
+                    <div class="footer-btn d-flex justify-content-center">
+                        <a class="btn btn-md-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-md-square rounded-circle me-3" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-md-square rounded-circle me-3" href="#"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-md-square rounded-circle me-0" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div> -->
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+<!-- </div> -->
+<!-- Footer End -->
+
+{% endblock %}

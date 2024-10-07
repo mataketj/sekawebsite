@@ -1,0 +1,159 @@
+{% extends 'base.html' %}
+{% block content %}
+    <!-- Service Start -->
+    <div class="container-fluid service py-5">
+        <div class="container py-5">
+            <div class="mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                <h1 class="display-4 mb-4">What is a Discovery Session?</h4>
+                <h4 class="text-primary">A FREE day of consultation with our Seka Squared engineers and business experts.</h4>
+                    <p> Our specialists will invest one full day for you to understand the data and machine learning capabilities that can add value to your business right now, all at no charge. We also tailor our consultation session to accommodate the needs of our clients while covering the following topics:</p>    
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Machine Learning & Data Science Overview</h5>
+                      <p class="card-text">Seka Squared will present the current state-of-the-art in machine learning, big data and cloud computing and how data science is approached in South Africa.</p>
+                      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Client needs identification</h5>
+                      <p class="card-text">We consult with you to identify the role players, business processes, data architecture and data pipelines in your organisation.</p>
+                      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Opportunity analysis</h5>
+                      <p class="card-text">We help you to identify problems and opportunities that exist in your organisation were Data analysis and Machine Learning can assist.</p>
+                      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Solution ideation</h5>
+                      <p class="card-text">Together, we brain storm to find a machine learning solution to exploit opportunities and improve your organization.</p>
+                      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Solution ranking</h5>
+                      <p class="card-text">We help you evaluate different potential solutions and which technology stack may be most beneficial.</p>
+                      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Automation journey</h5>
+                      <p class="card-text">We conclude the day by identifying the next steps in your Machine Learning journey to implement solutions in your organisation.</p>
+                      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid faq-section bg-light py-5">
+        <div class="container py-5">
+            <div>
+                <h2 class="text-primary"> Claim your FREE Discovery Session</h2s>
+                <h4 class="mb-4">Give us your details below.</h4>
+
+                <form method="POST">
+                  {{ form.hidden_tag() }}
+              
+                  <div class="row g-3">
+                      <!-- First Name Field -->
+                      <div class="col-lg-12 col-xl-6">
+                          <div class="form-floating">
+                              {{ form.first_name(class_="form-control border-0", id="first_name", placeholder="Your First Name") }}
+                              <label for="first_name">{{ form.first_name.label.text }}</label>
+                          </div>
+                      </div>
+              
+                      <!-- Last Name Field -->
+                      <div class="col-lg-12 col-xl-6">
+                          <div class="form-floating">
+                              {{ form.last_name(class_="form-control border-0", id="last_name", placeholder="Your Last Name") }}
+                              <label for="last_name">{{ form.last_name.label.text }}</label>
+                          </div>
+                      </div>
+              
+                      <!-- Email Field -->
+                      <div class="col-lg-12 col-xl-6">
+                          <div class="form-floating">
+                              {{ form.email(class_="form-control border-0", id="email", placeholder="Your Email") }}
+                              <label for="email">{{ form.email.label.text }}</label>
+                          </div>
+                      </div>
+              
+                      <!-- Company Name Field -->
+                      <div class="col-lg-12 col-xl-6">
+                          <div class="form-floating">
+                              {{ form.company_name(class_="form-control border-0", id="company_name", placeholder="Company Name") }}
+                              <label for="company_name">{{ form.company_name.label.text }}</label>
+                          </div>
+                      </div>
+              
+                      <!-- Company URL Field -->
+                      <div class="col-lg-12 col-xl-6">
+                          <div class="form-floating">
+                              {{ form.company_url(class_="form-control border-0", id="company_url", placeholder="Company Website/URL") }}
+                              <label for="company_url">{{ form.company_url.label.text }}</label>
+                          </div>
+                      </div>
+              
+                      <!-- Company Size Field -->
+                      <div class="col-12">
+                          <div class="form-floating">
+                              {{ form.company_size(class_="form-control border-0", id="company_size", placeholder="Company Size") }}
+                              <label for="company_size">{{ form.company_size.label.text }}</label>
+                          </div>
+                      </div>
+              
+                      <!-- Comment Field -->
+                      <div class="col-12">
+                          <div class="form-floating">
+                              {{ form.comment(class_="form-control border-0", id="comment", placeholder="Leave a message here", style="height: 120px") }}
+                              <label for="comment">{{ form.comment.label.text }}</label>
+                          </div>
+                      </div>
+              
+                      <!-- Submit Button -->
+                      <div class="col-12">
+                          <button class="btn btn-primary w-100 py-3">{{ form.submit.label.text }}</button>
+                      </div>
+                  </div>
+              </form>
+      
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- Service End -->
+
+{% endblock %}

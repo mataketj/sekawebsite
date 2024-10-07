@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block content %}
+       
+<div class="container-fluid team py-5">
+    <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+        <!-- <h4 class="text-primary">Our Team</h4> -->
+        <h1 class="display-4 mb-4">Meet the Visionaries Behind Seka Squared</h1>
+        <p class="mb-0">At Seka Squared, our leadership team combines deep technical expertise with strategic foresight to drive innovation in data science and engineering.
+        </p>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+
+        <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="blog-item">
+                <div class="blog-img">
+                    <img src="{{ url_for('static', filename='img/team1.png')}}" class="img-fluid rounded-top w-100" alt="">
+                    <!-- <div class="blog-categiry py-2 px-4">
+                        <span>Business</span>
+                    </div> -->
+                </div>
+                <div class="blog-content p-4">
+                    <a href="#" class="h4 d-inline-block mb-3">Vhuhwavho Matibe - Lead Data Scientist</a>
+                    <p class="mb-3">Vhuhwavho holds a Master’s degree in Pure Mathematics and brings 8 years of experience in data science and management. Specializing in machine learning, advanced analytics, and AI-driven solutions, she has successfully delivered projects in predictive modeling and operational optimization across global markets. Her expertise in data science methodologies empowers businesses to tackle complex challenges with data-driven insights.</p>
+                    <!-- <a href="#" class="btn p-0">Read More  <i class="fa fa-arrow-right"></i></a> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="blog-item">
+                <div class="blog-img">
+                    <img src="{{ url_for('static', filename='img/team2.png')}}" class="img-fluid rounded-top w-100" alt="">
+                    <!-- <div class="blog-categiry py-2 px-4">
+                        <span>Business</span>
+                    </div> -->
+                </div>
+                <div class="blog-content p-4">
+                    <!-- <div class="blog-comment d-flex justify-content-between mb-3">
+                        <div class="small"><span class="fa fa-user text-primary"></span> Martin.C</div>
+                        <div class="small"><span class="fa fa-calendar text-primary"></span> 30 Dec 2025</div>
+                        <div class="small"><span class="fa fa-comment-alt text-primary"></span> 6 Comments</div>
+                    </div> -->
+                    <a href="#" class="h4 d-inline-block mb-3">Tshediso J. Matake - Lead Data Engineer</a>
+                    <p class="mb-3">Tshediso, with 9 years of experience and a background in Mathematics and Physics, excels in building scalable data architectures and big data systems. His mastery of cloud computing and data engineering ensures that data is efficiently processed and delivered for actionable insights. Tshediso’s work has supported numerous clients in optimizing their data infrastructure for better decision-making.</p>
+                    <!-- <a href="#" class="btn p-0">Read More  <i class="fa fa-arrow-right"></i></a> -->
+                </div>
+            </div>
+        </div>
+            
+    </div>
+</div>
+{% endblock %}
