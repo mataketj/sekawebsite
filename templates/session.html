@@ -80,7 +80,7 @@
                 <h2 class="text-primary"> Claim your FREE Discovery Session</h2s>
                 <h4 class="mb-4">Give us your details below.</h4>
 
-                <form method="POST">
+                <form method="POST" action="{{ url_for('session') }}">
                   {{ form.hidden_tag() }}
               
                   <div class="row g-3">
@@ -155,5 +155,15 @@
     </div>
 
     <!-- Service End -->
+
+{% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+    <ul class="flashes">
+      {% for category, message in messages %}
+        <li class="{{ category }}">{{ message }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
 
 {% endblock %}
